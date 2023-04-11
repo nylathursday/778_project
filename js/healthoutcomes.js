@@ -5,6 +5,7 @@ Data: County Health Rankings & Roadmap 2014-2022*/
 var map;
 var attributes;
 var currentAttribute;
+//YOURE DOING AMAZING WAYT TO LEARN AND GROW
 
 var year; //starting by thinking about similar logic to current attributes
 var currentYear
