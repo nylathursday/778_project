@@ -135,3 +135,20 @@ button:hover {
 #health_factors0 {
   font-size: 30px;
 }
+
+.legend {
+  background-color: white;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.legend table {
+  width: 100%;
+}
+
+.legend td {
+  padding: 5px;
+}

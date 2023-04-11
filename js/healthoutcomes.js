@@ -5,11 +5,10 @@ Data: County Health Rankings & Roadmap 2014-2022*/
 var map;
 var attributes;
 var currentAttribute;
-//YOURE DOING AMAZING WAYT TO LEARN AND GROW
 
+//thinking through 
 var year; //starting by thinking about similar logic to current attributes
-var currentYear
-
+var currentYear;
 var subTitle;
 var currentSubtitle;
 
@@ -161,6 +160,7 @@ function createSequenceControls(attributes){
         var slider = "<input class='range-slider' type='range'></input>";
         document.querySelector("#panel").insertAdjacentHTML('beforeend',slider);
         //set slider attributes
+        console.log(attributes.length)
         document.querySelector(".range-slider").max = attributes.length -1;
         document.querySelector(".range-slider").min = 0;
         document.querySelector(".range-slider").value = 0;
@@ -172,15 +172,19 @@ function createSequenceControls(attributes){
         document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="reverse">2022</button>');
         document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="forward">2014</button>');
       }
+
+      $('#reverse').off()
+      $('#forward').off()
       
     var steps = document.querySelectorAll('.step');
     steps.forEach(function(step){
-        step.addEventListener("click", function(){
+        $(step).on("click", function(){
             var index = document.querySelector('.range-slider').value;
             
             if (step.id == 'forward'){
                 index++;
                 index = index > 9 ? 0 : index;
+                console.log(index)
             } else if (step.id == 'reverse'){
                 index--;
                 
@@ -210,6 +214,7 @@ function getData(map) {
           createChoropleth(json, attributes);
           createSequenceControls(attributes);
           infoPanel();
+          legend.addTo(map);
         });
     }
     // load default data
@@ -227,4 +232,18 @@ function getData(map) {
   };
 
 document.addEventListener('DOMContentLoaded',createMap)
+
+//add static legend
+var legend = L.control({position: "bottomleft"});
+legend.onAdd = function(map) {
+    var div = L.DomUtil.create("div", "legend"); 
+    div.innerHTML = 
+        '<b>County Health Rank</b><br>' +
+        '<i style="background-color: #b30000"></i>2090+<br>' +
+        '<i style="background-color: #e34a33"></i>933 - 2090<br>' +
+        '<i style="background-color: #fc8d59"></i>642 - 933<br>' +
+        '<i style="background-color: #fdcc8a"></i>399 - 642<br>' +
+        '<i style="background-color: #fef0d9"></i>0 - 399<br>';
+    return div;
+};
 
