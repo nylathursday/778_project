@@ -1,0 +1,137 @@
+/*stylesheet by Nyla Thursday, 2023*/
+
+
+/* Default styling */
+body {
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: left;
+  color: white;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: .95em;
+}
+
+/* web page features */
+
+#header {
+  height: 100px;
+  text-align: center;
+  background-color: #003C69;
+}
+
+#innerHeader {
+  height: 10px;
+  text-align: left;
+  background-color: #F29E38;
+}
+
+#panel {
+  border-radius: 5px;
+  float: left;
+  width: 25%;
+  height: 600px;
+  padding: 20px;
+  text-align: left;
+  line-height: 42px;
+  text-align: left;
+  background: rgb(181, 181, 181);
+  font-size: .7em;
+  line-height: normal;
+}
+
+/* maps*/
+#map {
+  border-radius: 5px;
+  float: left;
+  height: 600px;
+  width: 37%;
+}
+
+#map2 {
+  border-radius: 5px;
+  float: left;
+  height: 600px;
+  width: 37%;
+}
+
+/* Year slider */
+.range-slider {
+  width: 100%;
+}
+
+#forward {
+  float: right;
+}
+
+#reverse {
+  float: left;
+}
+
+/* legend */
+#legendControl {
+  width: 175px;
+  height: auto;
+  background-color: rgba(255,255,255,0.8);
+  padding: 10px;
+  line-height: 30px;
+  text-align: center;
+  border: solid gray 1px;
+}
+
+/* info panel */
+.infoHO {
+  padding: 6px 8px;
+  font: 14px/16px Verdana;
+  background: #f2972780;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.infoHO h4 {
+  margin: 0 0 5px;
+  color: rgb(78, 78, 78);
+}
+
+.infoHF {
+  padding: 6px 8px;
+  font: 14px/16px Verdana;
+  background: #f2972780;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.infoHF h4 {
+  margin: 0 0 5px;
+  color: rgb(78, 78, 78);
+}
+
+/* Data Buttons */
+#hoButtons {
+  font-family: Verdana;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color:#f2972780 !important;
+}
+
+#health_outcomes0 {
+  font-size: 30px;
+}
+
+#hfButtons {
+  font-family: Verdana;
+  font-size: 20px;
+
+}
+
+#health_factors0 {
+  font-size: 30px;
+}

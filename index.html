@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title> Wisconsin County Health Rankings Explorer </title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="lib/leaflet.css" />
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--HEADER -->
+    <div id = "header">
+      <div id = "innerHeader"> <h1>County Health<br>Rankings Explorer</h></div>
+    </div>
+
+      <!-- PAGE LAYOUT -->
+      <div id="map"></div>
+
+      <div id="panel"> <h2>The health outcomes rank is combined from the county's length of life and quality of life ranking</h2>
+        <div class="column" id="hoButtons" style="display: flex; flex-direction: column;">
+          <input type="button" id="health_outcomes0" value="Health Outcomes">
+          <input type="button" id="health_outcomes1" value="Length of Life">
+          <input type="button" id="health_outcomes2" value="Quality of Life">
+        </div>
+       <br>
+        <div class="column" id="hfButtons" style="display: flex; flex-direction: column;">
+          <input type="button" id="health_factors0" value="Health Factors">
+          <input type="button" id="health_factors1" value="Physical Environment">
+          <input type="button" id="health_factors2" value="Social & Economic">
+          <input type="button" id="health_factors3" value="Health Behaviors">
+          <input type="button" id="health_factors4" value="Clinical Care">
+        </div>
+      </div>
+      
+      <div id="map2"></div>
+    
+<!-- Scripts -->
+    <script type="text/javascript" src="lib/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="lib/leaflet-src.js"></script>
+    <script type="text/javascript" src="js/healthoutcomes.js"></script>
+    <!-- <script type="text/javascript" src="js/healthoutcomes copy.js"></script> -->
+    <script type="text/javascript" src="js/healthfactors.js"></script>
+
+  </body>
+</html>
