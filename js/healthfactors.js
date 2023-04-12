@@ -1,122 +1,240 @@
+/*Nyla Thursday GEOG 778 Final Project: UW Madison, May 2023
+Data: County Health Rankings & Roadmap 2014-2022*/
 
-  
-  //create map2 and set zoom
-  var map2 = L.map('map2').setView([44.7, -90], 6.5);
-  
-  // var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  //     maxZoom: 19,
-  //     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  // }).addTo(map2);
-  
-  
-  //color scale for health factors
-  function getFactorColor(d) {
-    return d > 54   ? '#375881' :
-           d > 36   ? '#7095C2' :
-           d > 18   ? '#A9BFDA' :
-                      '#E2EAF3';
-  };
-  
-  //style for health factors
-  function styleFactor(feature) { 
-    return {
-        fillColor: getFactorColor(feature.properties.RANK_22),
-        weight: 2,
-        opacity: 1,
-        color: 'white',
-        dashArray: '3',
-        fillOpacity: 1
-    };
-  };
-  
-  
-//highlight feature
+//declare global variables
+var map2;
+var attributes2;
+var currentAttribute2;
+
+//creat the map
+function createMapHF(){
+    map2 = L.map('map2', {
+        center: [44.8, -89.85],
+        zoom: 6.5
+    });
+    getDataHF(map2);
+};
+
+//create a Leaflet GeoJSON layer and add it to the map
+function createChoroplethHF(data, attributes2){
+    geojsonHF = L.geoJSON(data, {
+        style: function(feature){
+            return styleOutcomeHF(feature, attributes2); //styleOutcome called here
+        },
+        onEachFeature: onEachFeatureHF //on each feature makes highlight happen
+    }).addTo(map2);
+};
+
+//color scale for health outcomes. Color and classes from annual report
+function getOutcomeColorHF(value) {
+    switch (true) {
+      case value > 54:
+        return '#375881';
+      case value > 36:
+        return '#7095C2';
+      case value > 18:
+        return '#A9BFDA';
+      default:
+        return '#E2EAF3';
+    }
+};
+
+//adds highlight
 function highlightFeatureHF(e) {
-  var layerHF = e.target;
+    var layerHF = e.target;
 
-  layerHF.setStyle({
-      weight: 3,
-      color: '#F29727',
-      dashArray: '',
-      fillOpacity: 0.7
-  });
+    layerHF.setStyle({ //highlight style
+        weight: 3,
+        color: '#F29727',
+        dashArray: '',
+        fillOpacity: 0.7
+    });
+  
+    // puts the highlight on top
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layerHF.bringToFront();
+    }
+  };
 
-  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-      layerHF.bringToFront();
-
-  infoHF.update(layerHF.feature.properties); 
-  }
-}
-
-
-//removes highlight
+//removes highlight 
 function resetHighlightHF(e) {
-  geojsonHF.resetStyle(e.target);
-  infoHF.update();
-}
+    var layerHF = e.target; 
+    geojsonHF.resetStyle(e.target); 
+  };
 
-//click listener zooms to state
-function zoomToFeatureHF(e) {
-  map2.fitBounds(e.target.getBounds());
-}
-
-//on each feature to enable mouseover, mouseout, and click
-function onEachFeatureHF(feature, layerHF) { 
+//mouseover highlights feature, mouseout resests from highight
+function onEachFeatureHF(feature, layerHF) {
+  layerHF.bindTooltip('<b>' + feature.properties.COUNTY_NAM + ' County'+ '</b><br />' + Number(feature.properties[currentAttribute2]), {
+    className:"rank_info" //rank_info is what I use to style in css
+  });  
   layerHF.on({
-      mouseover: highlightFeatureHF,
-      mouseout: resetHighlightHF,
-      click: zoomToFeatureHF
-  });
+        mouseover: highlightFeatureHF,
+        mouseout: resetHighlightHF,
+    });
+  };
+
+//style for health outcomes
+function styleOutcomeHF(feature, attributes2) {
+    //For each feature, determine its value for the selected attribute
+    var attValue = Number(feature.properties[currentAttribute2]); 
+    return {
+      fillColor: getOutcomeColorHF(attValue),
+      weight: 2,
+      opacity: 1,
+      color: 'white',
+      dashArray: '5',
+      fillOpacity: 1
+    };
 }
 
-var geojsonHF;
-
-//use get to bring in health factors data
-$.getJSON("data/health_factors.geojson", function(data) {
-  geojsonHF = L.geoJSON(data, {
-    style: styleFactor,
-    onEachFeature: onEachFeatureHF
-  }).addTo(map2);});
-
-
-//created button to turn on physical environment
-//NEED TO ALSO CHANGE INFO BOX - numbers are updating title needs to update
-$("#health_factors1").on("click", function() {
-  $.getJSON("data/physical_env.geojson", function(data) {
-    geojsonPE = L.geoJSON(data, {
-      style: styleFactor,
-      onEachFeature: onEachFeatureHF,
-      // onEachFeature: infoPE.update (tried to make this below. Not sure if can do 2 on each features)
-      //how do I update the title of the info bar??
-      //
-      
-    }).addTo(map2);});
-}
-);
-
-
-
-//add info box
+//create title panel
 var infoHF = L.control();
-
-infoHF.onAdd = function (map2) {
-    this._div = L.DomUtil.create('div', 'infoHF'); // create a div with a class "info"
-    this.update();
-    return this._div;
+function infoPanel(){
+  infoHF.onAdd = function (map2) {
+      this._div = L.DomUtil.create('div', 'infoHF'); // create a div with a class "info"
+      this._div.innerHTML = '<h4 id="info-title">Health Factors</h4><h4 id="info-yr">2014</h4>';
+     // this.update();
+      return this._div;
+  };
+  infoHF.addTo(map2); 
 };
 
-// method that we will use to update the control based on feature properties passed
-infoHF.update = function (props) {
-    this._div.innerHTML = '<h4>Health Factors</h4>' +  (props ?
-        '<b>' + props.COUNTY_NAM + ' County'+ '</b><br />' + props.RANK_22
-        : 'Hover over a county');
+
+//update choropleth from slider and buttons
+function updateChoroplethHF(attribute2){
+    currentAttribute2 = attribute2;
+    map2.eachLayer(function(layer){
+        if (layer.feature && layer.feature.properties[attribute2]){
+           var value = layer.feature.properties[attribute2];
+            layer.setStyle({
+                fillColor: getOutcomeColorHF(value),
+                weight: 2,
+                opacity: 1,
+                color: 'white',
+                dashArray: '5',
+                fillOpacity: 0.8
+            });
+           var year = attribute2.split("_")[1];
+        };
+    });
 };
 
-// // method that we will use to update the control based on feature properties passed
-// infoPE.update = function (props) {
-//   this._div.innerHTML = '<h4>Physical Environment Rank</h4>' +  (props ?
-//       '<b>' + props.COUNTY_NAM + ' County'+ '</b><br />' + props.RANK_22
-//       : 'Hover over a county');
+
+function processDataHF(data){
+    //empty array to hold attributes
+    var attributes2 = [];
+    //properties of the first feature in the dataset //* CAN I change to make new array for next set of features, like if i did 1 table
+    var properties = data.features[0].properties;
+    //push each attribute name into attributes array
+    for (var attribute in properties){
+        //only take attributes with RANK values
+       if (attribute.indexOf("RANK") > -1){
+            attributes2.push(attribute); //placing all attributes into the array for other functions to move through
+        };
+    };
+    return attributes2;
+};
+
+function createSequenceControlsHF(attributes2){
+    //create range input element (slider)
+    if (!document.querySelector(".range-slider")) {
+      infoPanel();
+      
+      var slider = "<input class='range-slider' type='range'></input>";
+        document.querySelector("#panel").insertAdjacentHTML('beforeend',slider);
+        //set slider attributes
+        document.querySelector(".range-slider").max = attributes2.length -1;
+        document.querySelector(".range-slider").min = 0;
+        document.querySelector(".range-slider").value = 0;
+        document.querySelector(".range-slider").step = 1;
+      }
+      
+      //add step buttons if they don't already exist
+      if (!document.querySelector("#reverse")) {
+        document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="reverse">2014</button>');
+        document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="forward">2022</button>');
+      }
+
+      $('#reverse').off()
+      $('#forward').off()
+      
+    var steps = document.querySelectorAll('.step');
+    steps.forEach(function(step){
+        $(step).on("click", function(){
+            var index = document.querySelector('.range-slider').value;
+
+            
+            if (step.id == 'forward'){
+                index++;
+                index = index > 9 ? 0 : index;
+  
+            } else if (step.id == 'reverse'){
+                index--;
+                
+                index = index < 0 ? 9 : index;
+            };
+            document.querySelector('.range-slider').value = index;
+            updateChoropleth(attributes2[index]);
+            document.querySelector("#info-yr").innerHTML = attributes2[index].split("_")[1];
+        })
+    })
+    document.querySelector('.range-slider').addEventListener('input', function(){
+        var index = this.value;
+        updateChoroplethHF(attributes2[index]);
+    });
+};
+
+function getDataHF(map2) {
+    // define a function that loads the data
+    function loadDataHF(dataUrl) {
+      fetch(dataUrl)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (json) {
+          //call functions for map
+          attributes2 = processDataHF(json);
+          currentAttribute2 = attributes2[0];
+          createChoroplethHF(json, attributes2);
+          createSequenceControlsHF(attributes2);
+         // infoPanel();
+          // legendHF.addTo(map2);
+        });
+    }
+    // load default data
+    loadDataHF("data/health_factors.geojson");
+    // attach click event handlers to the buttons
+    $("#health_outcomes0").on("click", function () {
+      loadData("data/health_outcomes.geojson");
+      document.querySelector("#info-title").innerHTML = this.value;
+    });
+    $("#health_outcomes1").on("click", function () {
+      loadData("data/length_life.geojson");
+      document.querySelector("#info-title").innerHTML = this.value;
+    });
+    $("#health_outcomes2").on("click", function () {
+      loadData("data/quality_life.geojson");
+      document.querySelector("#info-title").innerHTML = this.value;
+    });
+  };
+
+document.addEventListener('DOMContentLoaded',createMapHF)
+
+// // Define the colors for each class
+// const colorsHF = ['#3C6754', '#72AC93','#B2D2C4', '#F2F7F5' ];
+
+// // Define the labels for each class
+// const labelsHF = [' 55 - 72', ' 37 - 54', ' 19 - 36', ' 1 - 18'];
+
+// // Create a new Leaflet control for the legend
+// const legendHF = L.control({ position: 'bottomleft' });
+
+// // Add a function to generate the HTML content for the legend
+// legendHF.onAdd = function(map) {
+//   const div = L.DomUtil.create('div', 'legendHF');
+//   div.innerHTML += '<b>County Rank</b><br>';
+//   for (let i = 0; i < colorsHF.length; i++) {
+//     div.innerHTML += '<div><svg height="12" width="12"><rect x="0" y="0" width="12" height="12" style="fill:' + colors[i] + ';"/></svg>' + labels[i] + '</div>';
+//   }
+//   return div;
 // };
-
-infoHF.addTo(map2);
