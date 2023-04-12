@@ -3558,15 +3558,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Saint Croix",
-             "RANK_2014":null,
-             "RANK_2015":null,
-             "RANK_2016":null,
-             "RANK_2017":null,
-             "RANK_2018":null,
-             "RANK_2019":null,
-             "RANK_2020":null,
-             "RANK_2021":null,
-             "RANK_2022":null
+             "RANK_2014":12,
+             "RANK_2015":10,
+             "RANK_2016":2,
+             "RANK_2017":6,
+             "RANK_2018":5,
+             "RANK_2019":3,
+             "RANK_2020":1,
+             "RANK_2021":1,
+             "RANK_2022":3
           }
        },
        {
