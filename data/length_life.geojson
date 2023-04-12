@@ -44,15 +44,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Kenosha",
-             "RANK_14":56,
-             "RANK_15":57,
-             "RANK_16":54,
-             "RANK_17":54,
-             "RANK_18":54,
-             "RANK_19":50,
-             "RANK_20":49,
-             "RANK_21":48,
-             "RANK_22":44
+             "RANK_2014":56,
+             "RANK_2015":57,
+             "RANK_2016":54,
+             "RANK_2017":54,
+             "RANK_2018":54,
+             "RANK_2019":50,
+             "RANK_2020":49,
+             "RANK_2021":48,
+             "RANK_2022":44
           }
        },
        {
@@ -90,15 +90,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Lafayette",
-             "RANK_14":54,
-             "RANK_15":30,
-             "RANK_16":19,
-             "RANK_17":37,
-             "RANK_18":32,
-             "RANK_19":29,
-             "RANK_20":48,
-             "RANK_21":33,
-             "RANK_22":39
+             "RANK_2014":54,
+             "RANK_2015":30,
+             "RANK_2016":19,
+             "RANK_2017":37,
+             "RANK_2018":32,
+             "RANK_2019":29,
+             "RANK_2020":48,
+             "RANK_2021":33,
+             "RANK_2022":39
           }
        },
        {
@@ -136,15 +136,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Rock",
-             "RANK_14":52,
-             "RANK_15":56,
-             "RANK_16":52,
-             "RANK_17":50,
-             "RANK_18":44,
-             "RANK_19":49,
-             "RANK_20":62,
-             "RANK_21":60,
-             "RANK_22":59
+             "RANK_2014":52,
+             "RANK_2015":56,
+             "RANK_2016":52,
+             "RANK_2017":50,
+             "RANK_2018":44,
+             "RANK_2019":49,
+             "RANK_2020":62,
+             "RANK_2021":60,
+             "RANK_2022":59
           }
        },
        {
@@ -190,15 +190,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Walworth",
-             "RANK_14":20,
-             "RANK_15":35,
-             "RANK_16":43,
-             "RANK_17":43,
-             "RANK_18":47,
-             "RANK_19":35,
-             "RANK_20":31,
-             "RANK_21":34,
-             "RANK_22":38
+             "RANK_2014":20,
+             "RANK_2015":35,
+             "RANK_2016":43,
+             "RANK_2017":43,
+             "RANK_2018":47,
+             "RANK_2019":35,
+             "RANK_2020":31,
+             "RANK_2021":34,
+             "RANK_2022":38
           }
        },
        {
@@ -240,15 +240,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Green",
-             "RANK_14":17,
-             "RANK_15":36,
-             "RANK_16":39,
-             "RANK_17":17,
-             "RANK_18":13,
-             "RANK_19":6,
-             "RANK_20":10,
-             "RANK_21":12,
-             "RANK_22":18
+             "RANK_2014":17,
+             "RANK_2015":36,
+             "RANK_2016":39,
+             "RANK_2017":17,
+             "RANK_2018":13,
+             "RANK_2019":6,
+             "RANK_2020":10,
+             "RANK_2021":12,
+             "RANK_2022":18
           }
        },
        {
@@ -306,15 +306,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Racine",
-             "RANK_14":45,
-             "RANK_15":51,
-             "RANK_16":46,
-             "RANK_17":49,
-             "RANK_18":57,
-             "RANK_19":57,
-             "RANK_20":59,
-             "RANK_21":53,
-             "RANK_22":60
+             "RANK_2014":45,
+             "RANK_2015":51,
+             "RANK_2016":46,
+             "RANK_2017":49,
+             "RANK_2018":57,
+             "RANK_2019":57,
+             "RANK_2020":59,
+             "RANK_2021":53,
+             "RANK_2022":60
           }
        },
        {
@@ -360,15 +360,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Jefferson",
-             "RANK_14":31,
-             "RANK_15":9,
-             "RANK_16":5,
-             "RANK_17":15,
-             "RANK_18":14,
-             "RANK_19":23,
-             "RANK_20":29,
-             "RANK_21":31,
-             "RANK_22":19
+             "RANK_2014":31,
+             "RANK_2015":9,
+             "RANK_2016":5,
+             "RANK_2017":15,
+             "RANK_2018":14,
+             "RANK_2019":23,
+             "RANK_2020":29,
+             "RANK_2021":31,
+             "RANK_2022":19
           }
        },
        {
@@ -414,15 +414,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Waukesha",
-             "RANK_14":4,
-             "RANK_15":7,
-             "RANK_16":4,
-             "RANK_17":6,
-             "RANK_18":6,
-             "RANK_19":4,
-             "RANK_20":6,
-             "RANK_21":9,
-             "RANK_22":7
+             "RANK_2014":4,
+             "RANK_2015":7,
+             "RANK_2016":4,
+             "RANK_2017":6,
+             "RANK_2018":6,
+             "RANK_2019":4,
+             "RANK_2020":6,
+             "RANK_2021":9,
+             "RANK_2022":7
           }
        },
        {
@@ -484,15 +484,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Iowa",
-             "RANK_14":33,
-             "RANK_15":54,
-             "RANK_16":41,
-             "RANK_17":35,
-             "RANK_18":21,
-             "RANK_19":19,
-             "RANK_20":11,
-             "RANK_21":8,
-             "RANK_22":6
+             "RANK_2014":33,
+             "RANK_2015":54,
+             "RANK_2016":41,
+             "RANK_2017":35,
+             "RANK_2018":21,
+             "RANK_2019":19,
+             "RANK_2020":11,
+             "RANK_2021":8,
+             "RANK_2022":6
           }
        },
        {
@@ -554,15 +554,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Milwaukee",
-             "RANK_14":71,
-             "RANK_15":67,
-             "RANK_16":66,
-             "RANK_17":66,
-             "RANK_18":63,
-             "RANK_19":68,
-             "RANK_20":69,
-             "RANK_21":68,
-             "RANK_22":68
+             "RANK_2014":71,
+             "RANK_2015":67,
+             "RANK_2016":66,
+             "RANK_2017":66,
+             "RANK_2018":63,
+             "RANK_2019":68,
+             "RANK_2020":69,
+             "RANK_2021":68,
+             "RANK_2022":68
           }
        },
        {
@@ -668,15 +668,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Grant",
-             "RANK_14":25,
-             "RANK_15":31,
-             "RANK_16":35,
-             "RANK_17":34,
-             "RANK_18":30,
-             "RANK_19":11,
-             "RANK_20":12,
-             "RANK_21":13,
-             "RANK_22":27
+             "RANK_2014":25,
+             "RANK_2015":31,
+             "RANK_2016":35,
+             "RANK_2017":34,
+             "RANK_2018":30,
+             "RANK_2019":11,
+             "RANK_2020":12,
+             "RANK_2021":13,
+             "RANK_2022":27
           }
        },
        {
@@ -746,15 +746,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Dane",
-             "RANK_14":5,
-             "RANK_15":10,
-             "RANK_16":10,
-             "RANK_17":5,
-             "RANK_18":7,
-             "RANK_19":7,
-             "RANK_20":8,
-             "RANK_21":5,
-             "RANK_22":8
+             "RANK_2014":5,
+             "RANK_2015":10,
+             "RANK_2016":10,
+             "RANK_2017":5,
+             "RANK_2018":7,
+             "RANK_2019":7,
+             "RANK_2020":8,
+             "RANK_2021":5,
+             "RANK_2022":8
           }
        },
        {
@@ -844,15 +844,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Crawford",
-             "RANK_14":47,
-             "RANK_15":44,
-             "RANK_16":45,
-             "RANK_17":56,
-             "RANK_18":59,
-             "RANK_19":56,
-             "RANK_20":56,
-             "RANK_21":50,
-             "RANK_22":40
+             "RANK_2014":47,
+             "RANK_2015":44,
+             "RANK_2016":45,
+             "RANK_2017":56,
+             "RANK_2018":59,
+             "RANK_2019":56,
+             "RANK_2020":56,
+             "RANK_2021":50,
+             "RANK_2022":40
           }
        },
        {
@@ -910,15 +910,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Richland",
-             "RANK_14":64,
-             "RANK_15":33,
-             "RANK_16":18,
-             "RANK_17":33,
-             "RANK_18":42,
-             "RANK_19":52,
-             "RANK_20":54,
-             "RANK_21":24,
-             "RANK_22":25
+             "RANK_2014":64,
+             "RANK_2015":33,
+             "RANK_2016":18,
+             "RANK_2017":33,
+             "RANK_2018":42,
+             "RANK_2019":52,
+             "RANK_2020":54,
+             "RANK_2021":24,
+             "RANK_2022":25
           }
        },
        {
@@ -972,15 +972,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Washington",
-             "RANK_14":11,
-             "RANK_15":19,
-             "RANK_16":15,
-             "RANK_17":10,
-             "RANK_18":11,
-             "RANK_19":10,
-             "RANK_20":7,
-             "RANK_21":10,
-             "RANK_22":12
+             "RANK_2014":11,
+             "RANK_2015":19,
+             "RANK_2016":15,
+             "RANK_2017":10,
+             "RANK_2018":11,
+             "RANK_2019":10,
+             "RANK_2020":7,
+             "RANK_2021":10,
+             "RANK_2022":12
           }
        },
        {
@@ -1038,15 +1038,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Ozaukee",
-             "RANK_14":2,
-             "RANK_15":4,
-             "RANK_16":3,
-             "RANK_17":2,
-             "RANK_18":1,
-             "RANK_19":2,
-             "RANK_20":1,
-             "RANK_21":3,
-             "RANK_22":2
+             "RANK_2014":2,
+             "RANK_2015":4,
+             "RANK_2016":3,
+             "RANK_2017":2,
+             "RANK_2018":1,
+             "RANK_2019":2,
+             "RANK_2020":1,
+             "RANK_2021":3,
+             "RANK_2022":2
           }
        },
        {
@@ -1108,15 +1108,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Dodge",
-             "RANK_14":37,
-             "RANK_15":23,
-             "RANK_16":20,
-             "RANK_17":16,
-             "RANK_18":20,
-             "RANK_19":42,
-             "RANK_20":53,
-             "RANK_21":41,
-             "RANK_22":43
+             "RANK_2014":37,
+             "RANK_2015":23,
+             "RANK_2016":20,
+             "RANK_2017":16,
+             "RANK_2018":20,
+             "RANK_2019":42,
+             "RANK_2020":53,
+             "RANK_2021":41,
+             "RANK_2022":43
           }
        },
        {
@@ -1210,15 +1210,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Sauk",
-             "RANK_14":50,
-             "RANK_15":50,
-             "RANK_16":42,
-             "RANK_17":40,
-             "RANK_18":33,
-             "RANK_19":30,
-             "RANK_20":32,
-             "RANK_21":30,
-             "RANK_22":24
+             "RANK_2014":50,
+             "RANK_2015":50,
+             "RANK_2016":42,
+             "RANK_2017":40,
+             "RANK_2018":33,
+             "RANK_2019":30,
+             "RANK_2020":32,
+             "RANK_2021":30,
+             "RANK_2022":24
           }
        },
        {
@@ -1308,15 +1308,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Columbia",
-             "RANK_14":35,
-             "RANK_15":24,
-             "RANK_16":38,
-             "RANK_17":36,
-             "RANK_18":45,
-             "RANK_19":40,
-             "RANK_20":36,
-             "RANK_21":35,
-             "RANK_22":21
+             "RANK_2014":35,
+             "RANK_2015":24,
+             "RANK_2016":38,
+             "RANK_2017":36,
+             "RANK_2018":45,
+             "RANK_2019":40,
+             "RANK_2020":36,
+             "RANK_2021":35,
+             "RANK_2022":21
           }
        },
        {
@@ -1394,15 +1394,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Vernon",
-             "RANK_14":27,
-             "RANK_15":41,
-             "RANK_16":37,
-             "RANK_17":38,
-             "RANK_18":26,
-             "RANK_19":16,
-             "RANK_20":18,
-             "RANK_21":17,
-             "RANK_22":33
+             "RANK_2014":27,
+             "RANK_2015":41,
+             "RANK_2016":37,
+             "RANK_2017":38,
+             "RANK_2018":26,
+             "RANK_2019":16,
+             "RANK_2020":18,
+             "RANK_2021":17,
+             "RANK_2022":33
           }
        },
        {
@@ -1460,15 +1460,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Sheboygan",
-             "RANK_14":21,
-             "RANK_15":16,
-             "RANK_16":21,
-             "RANK_17":21,
-             "RANK_18":28,
-             "RANK_19":33,
-             "RANK_20":23,
-             "RANK_21":21,
-             "RANK_22":28
+             "RANK_2014":21,
+             "RANK_2015":16,
+             "RANK_2016":21,
+             "RANK_2017":21,
+             "RANK_2018":28,
+             "RANK_2019":33,
+             "RANK_2020":23,
+             "RANK_2021":21,
+             "RANK_2022":28
           }
        },
        {
@@ -1522,15 +1522,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Fond du Lac",
-             "RANK_14":23,
-             "RANK_15":29,
-             "RANK_16":28,
-             "RANK_17":28,
-             "RANK_18":17,
-             "RANK_19":15,
-             "RANK_20":20,
-             "RANK_21":32,
-             "RANK_22":36
+             "RANK_2014":23,
+             "RANK_2015":29,
+             "RANK_2016":28,
+             "RANK_2017":28,
+             "RANK_2018":17,
+             "RANK_2019":15,
+             "RANK_2020":20,
+             "RANK_2021":32,
+             "RANK_2022":36
           }
        },
        {
@@ -1588,15 +1588,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Marquette",
-             "RANK_14":70,
-             "RANK_15":68,
-             "RANK_16":55,
-             "RANK_17":39,
-             "RANK_18":55,
-             "RANK_19":64,
-             "RANK_20":67,
-             "RANK_21":61,
-             "RANK_22":58
+             "RANK_2014":70,
+             "RANK_2015":68,
+             "RANK_2016":55,
+             "RANK_2017":39,
+             "RANK_2018":55,
+             "RANK_2019":64,
+             "RANK_2020":67,
+             "RANK_2021":61,
+             "RANK_2022":58
           }
        },
        {
@@ -1670,15 +1670,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Green Lake",
-             "RANK_14":68,
-             "RANK_15":39,
-             "RANK_16":17,
-             "RANK_17":42,
-             "RANK_18":37,
-             "RANK_19":51,
-             "RANK_20":61,
-             "RANK_21":59,
-             "RANK_22":50
+             "RANK_2014":68,
+             "RANK_2015":39,
+             "RANK_2016":17,
+             "RANK_2017":42,
+             "RANK_2018":37,
+             "RANK_2019":51,
+             "RANK_2020":61,
+             "RANK_2021":59,
+             "RANK_2022":50
           }
        },
        {
@@ -1756,15 +1756,15 @@
           },
           "properties":{
              "COUNTY_NAM":"La Crosse",
-             "RANK_14":24,
-             "RANK_15":25,
-             "RANK_16":13,
-             "RANK_17":11,
-             "RANK_18":15,
-             "RANK_19":31,
-             "RANK_20":30,
-             "RANK_21":29,
-             "RANK_22":22
+             "RANK_2014":24,
+             "RANK_2015":25,
+             "RANK_2016":13,
+             "RANK_2017":11,
+             "RANK_2018":15,
+             "RANK_2019":31,
+             "RANK_2020":30,
+             "RANK_2021":29,
+             "RANK_2022":22
           }
        },
        {
@@ -1818,15 +1818,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Monroe",
-             "RANK_14":53,
-             "RANK_15":58,
-             "RANK_16":63,
-             "RANK_17":60,
-             "RANK_18":58,
-             "RANK_19":44,
-             "RANK_20":55,
-             "RANK_21":54,
-             "RANK_22":51
+             "RANK_2014":53,
+             "RANK_2015":58,
+             "RANK_2016":63,
+             "RANK_2017":60,
+             "RANK_2018":58,
+             "RANK_2019":44,
+             "RANK_2020":55,
+             "RANK_2021":54,
+             "RANK_2022":51
           }
        },
        {
@@ -1868,15 +1868,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Waushara",
-             "RANK_14":62,
-             "RANK_15":66,
-             "RANK_16":58,
-             "RANK_17":55,
-             "RANK_18":43,
-             "RANK_19":34,
-             "RANK_20":34,
-             "RANK_21":19,
-             "RANK_22":29
+             "RANK_2014":62,
+             "RANK_2015":66,
+             "RANK_2016":58,
+             "RANK_2017":55,
+             "RANK_2018":43,
+             "RANK_2019":34,
+             "RANK_2020":34,
+             "RANK_2021":19,
+             "RANK_2022":29
           }
        },
        {
@@ -1962,15 +1962,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Juneau",
-             "RANK_14":59,
-             "RANK_15":63,
-             "RANK_16":59,
-             "RANK_17":57,
-             "RANK_18":60,
-             "RANK_19":55,
-             "RANK_20":60,
-             "RANK_21":63,
-             "RANK_22":62
+             "RANK_2014":59,
+             "RANK_2015":63,
+             "RANK_2016":59,
+             "RANK_2017":57,
+             "RANK_2018":60,
+             "RANK_2019":55,
+             "RANK_2020":60,
+             "RANK_2021":63,
+             "RANK_2022":62
           }
        },
        {
@@ -2056,15 +2056,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Adams",
-             "RANK_14":67,
-             "RANK_15":60,
-             "RANK_16":70,
-             "RANK_17":71,
-             "RANK_18":70,
-             "RANK_19":59,
-             "RANK_20":65,
-             "RANK_21":70,
-             "RANK_22":70
+             "RANK_2014":67,
+             "RANK_2015":60,
+             "RANK_2016":70,
+             "RANK_2017":71,
+             "RANK_2018":70,
+             "RANK_2019":59,
+             "RANK_2020":65,
+             "RANK_2021":70,
+             "RANK_2022":70
           }
        },
        {
@@ -2110,15 +2110,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Winnebago",
-             "RANK_14":30,
-             "RANK_15":34,
-             "RANK_16":25,
-             "RANK_17":23,
-             "RANK_18":19,
-             "RANK_19":22,
-             "RANK_20":24,
-             "RANK_21":27,
-             "RANK_22":34
+             "RANK_2014":30,
+             "RANK_2015":34,
+             "RANK_2016":25,
+             "RANK_2017":23,
+             "RANK_2018":19,
+             "RANK_2019":22,
+             "RANK_2020":24,
+             "RANK_2021":27,
+             "RANK_2022":34
           }
        },
        {
@@ -2164,15 +2164,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Calumet",
-             "RANK_14":8,
-             "RANK_15":2,
-             "RANK_16":1,
-             "RANK_17":18,
-             "RANK_18":16,
-             "RANK_19":3,
-             "RANK_20":3,
-             "RANK_21":6,
-             "RANK_22":5
+             "RANK_2014":8,
+             "RANK_2015":2,
+             "RANK_2016":1,
+             "RANK_2017":18,
+             "RANK_2018":16,
+             "RANK_2019":3,
+             "RANK_2020":3,
+             "RANK_2021":6,
+             "RANK_2022":5
           }
        },
        {
@@ -2246,15 +2246,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Manitowoc",
-             "RANK_14":28,
-             "RANK_15":42,
-             "RANK_16":40,
-             "RANK_17":48,
-             "RANK_18":49,
-             "RANK_19":41,
-             "RANK_20":41,
-             "RANK_21":55,
-             "RANK_22":52
+             "RANK_2014":28,
+             "RANK_2015":42,
+             "RANK_2016":40,
+             "RANK_2017":48,
+             "RANK_2018":49,
+             "RANK_2019":41,
+             "RANK_2020":41,
+             "RANK_2021":55,
+             "RANK_2022":52
           }
        },
        {
@@ -2300,15 +2300,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Outagamie",
-             "RANK_14":15,
-             "RANK_15":13,
-             "RANK_16":12,
-             "RANK_17":4,
-             "RANK_18":12,
-             "RANK_19":14,
-             "RANK_20":13,
-             "RANK_21":15,
-             "RANK_22":16
+             "RANK_2014":15,
+             "RANK_2015":13,
+             "RANK_2016":12,
+             "RANK_2017":4,
+             "RANK_2018":12,
+             "RANK_2019":14,
+             "RANK_2020":13,
+             "RANK_2021":15,
+             "RANK_2022":16
           }
        },
        {
@@ -2394,15 +2394,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Jackson",
-             "RANK_14":38,
-             "RANK_15":17,
-             "RANK_16":14,
-             "RANK_17":14,
-             "RANK_18":48,
-             "RANK_19":61,
-             "RANK_20":63,
-             "RANK_21":66,
-             "RANK_22":66
+             "RANK_2014":38,
+             "RANK_2015":17,
+             "RANK_2016":14,
+             "RANK_2017":14,
+             "RANK_2018":48,
+             "RANK_2019":61,
+             "RANK_2020":63,
+             "RANK_2021":66,
+             "RANK_2022":66
           }
        },
        {
@@ -2496,15 +2496,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Trempealeau",
-             "RANK_14":26,
-             "RANK_15":38,
-             "RANK_16":33,
-             "RANK_17":12,
-             "RANK_18":10,
-             "RANK_19":32,
-             "RANK_20":51,
-             "RANK_21":40,
-             "RANK_22":35
+             "RANK_2014":26,
+             "RANK_2015":38,
+             "RANK_2016":33,
+             "RANK_2017":12,
+             "RANK_2018":10,
+             "RANK_2019":32,
+             "RANK_2020":51,
+             "RANK_2021":40,
+             "RANK_2022":35
           }
        },
        {
@@ -2598,15 +2598,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Buffalo",
-             "RANK_14":32,
-             "RANK_15":14,
-             "RANK_16":6,
-             "RANK_17":13,
-             "RANK_18":36,
-             "RANK_19":46,
-             "RANK_20":22,
-             "RANK_21":14,
-             "RANK_22":4
+             "RANK_2014":32,
+             "RANK_2015":14,
+             "RANK_2016":6,
+             "RANK_2017":13,
+             "RANK_2018":36,
+             "RANK_2019":46,
+             "RANK_2020":22,
+             "RANK_2021":14,
+             "RANK_2022":4
           }
        },
        {
@@ -2656,15 +2656,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Wood",
-             "RANK_14":19,
-             "RANK_15":21,
-             "RANK_16":24,
-             "RANK_17":19,
-             "RANK_18":27,
-             "RANK_19":47,
-             "RANK_20":58,
-             "RANK_21":56,
-             "RANK_22":56
+             "RANK_2014":19,
+             "RANK_2015":21,
+             "RANK_2016":24,
+             "RANK_2017":19,
+             "RANK_2018":27,
+             "RANK_2019":47,
+             "RANK_2020":58,
+             "RANK_2021":56,
+             "RANK_2022":56
           }
        },
        {
@@ -2710,15 +2710,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Waupaca",
-             "RANK_14":39,
-             "RANK_15":46,
-             "RANK_16":47,
-             "RANK_17":32,
-             "RANK_18":38,
-             "RANK_19":53,
-             "RANK_20":50,
-             "RANK_21":57,
-             "RANK_22":49
+             "RANK_2014":39,
+             "RANK_2015":46,
+             "RANK_2016":47,
+             "RANK_2017":32,
+             "RANK_2018":38,
+             "RANK_2019":53,
+             "RANK_2020":50,
+             "RANK_2021":57,
+             "RANK_2022":49
           }
        },
        {
@@ -2768,15 +2768,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Portage",
-             "RANK_14":7,
-             "RANK_15":8,
-             "RANK_16":7,
-             "RANK_17":8,
-             "RANK_18":8,
-             "RANK_19":1,
-             "RANK_20":2,
-             "RANK_21":4,
-             "RANK_22":11
+             "RANK_2014":7,
+             "RANK_2015":8,
+             "RANK_2016":7,
+             "RANK_2017":8,
+             "RANK_2018":8,
+             "RANK_2019":1,
+             "RANK_2020":2,
+             "RANK_2021":4,
+             "RANK_2022":11
           }
        },
        {
@@ -2862,15 +2862,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Brown",
-             "RANK_14":12,
-             "RANK_15":22,
-             "RANK_16":30,
-             "RANK_17":24,
-             "RANK_18":22,
-             "RANK_19":24,
-             "RANK_20":17,
-             "RANK_21":20,
-             "RANK_22":20
+             "RANK_2014":12,
+             "RANK_2015":22,
+             "RANK_2016":30,
+             "RANK_2017":24,
+             "RANK_2018":22,
+             "RANK_2019":24,
+             "RANK_2020":17,
+             "RANK_2021":20,
+             "RANK_2022":20
           }
        },
        {
@@ -2932,15 +2932,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Pepin",
-             "RANK_14":16,
-             "RANK_15":6,
-             "RANK_16":11,
-             "RANK_17":27,
-             "RANK_18":5,
-             "RANK_19":13,
-             "RANK_20":19,
-             "RANK_21":23,
-             "RANK_22":32
+             "RANK_2014":16,
+             "RANK_2015":6,
+             "RANK_2016":11,
+             "RANK_2017":27,
+             "RANK_2018":5,
+             "RANK_2019":13,
+             "RANK_2020":19,
+             "RANK_2021":23,
+             "RANK_2022":32
           }
        },
        {
@@ -2994,15 +2994,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Kewaunee",
-             "RANK_14":1,
-             "RANK_15":1,
-             "RANK_16":9,
-             "RANK_17":1,
-             "RANK_18":3,
-             "RANK_19":12,
-             "RANK_20":21,
-             "RANK_21":18,
-             "RANK_22":23
+             "RANK_2014":1,
+             "RANK_2015":1,
+             "RANK_2016":9,
+             "RANK_2017":1,
+             "RANK_2018":3,
+             "RANK_2019":12,
+             "RANK_2020":21,
+             "RANK_2021":18,
+             "RANK_2022":23
           }
        },
        {
@@ -3048,15 +3048,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Eau Claire",
-             "RANK_14":9,
-             "RANK_15":15,
-             "RANK_16":23,
-             "RANK_17":20,
-             "RANK_18":29,
-             "RANK_19":28,
-             "RANK_20":28,
-             "RANK_21":28,
-             "RANK_22":15
+             "RANK_2014":9,
+             "RANK_2015":15,
+             "RANK_2016":23,
+             "RANK_2017":20,
+             "RANK_2018":29,
+             "RANK_2019":28,
+             "RANK_2020":28,
+             "RANK_2021":28,
+             "RANK_2022":15
           }
        },
        {
@@ -3134,15 +3134,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Pierce",
-             "RANK_14":3,
-             "RANK_15":3,
-             "RANK_16":2,
-             "RANK_17":3,
-             "RANK_18":4,
-             "RANK_19":8,
-             "RANK_20":5,
-             "RANK_21":1,
-             "RANK_22":1
+             "RANK_2014":3,
+             "RANK_2015":3,
+             "RANK_2016":2,
+             "RANK_2017":3,
+             "RANK_2018":4,
+             "RANK_2019":8,
+             "RANK_2020":5,
+             "RANK_2021":1,
+             "RANK_2022":1
           }
        },
        {
@@ -3212,15 +3212,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Shawano",
-             "RANK_14":57,
-             "RANK_15":32,
-             "RANK_16":34,
-             "RANK_17":47,
-             "RANK_18":39,
-             "RANK_19":37,
-             "RANK_20":57,
-             "RANK_21":58,
-             "RANK_22":55
+             "RANK_2014":57,
+             "RANK_2015":32,
+             "RANK_2016":34,
+             "RANK_2017":47,
+             "RANK_2018":39,
+             "RANK_2019":37,
+             "RANK_2020":57,
+             "RANK_2021":58,
+             "RANK_2022":55
           }
        },
        {
@@ -3282,15 +3282,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Clark",
-             "RANK_14":44,
-             "RANK_15":53,
-             "RANK_16":48,
-             "RANK_17":46,
-             "RANK_18":25,
-             "RANK_19":25,
-             "RANK_20":52,
-             "RANK_21":51,
-             "RANK_22":53
+             "RANK_2014":44,
+             "RANK_2015":53,
+             "RANK_2016":48,
+             "RANK_2017":46,
+             "RANK_2018":25,
+             "RANK_2019":25,
+             "RANK_2020":52,
+             "RANK_2021":51,
+             "RANK_2022":53
           }
        },
        {
@@ -3352,15 +3352,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Marathon",
-             "RANK_14":22,
-             "RANK_15":18,
-             "RANK_16":26,
-             "RANK_17":22,
-             "RANK_18":24,
-             "RANK_19":18,
-             "RANK_20":14,
-             "RANK_21":16,
-             "RANK_22":13
+             "RANK_2014":22,
+             "RANK_2015":18,
+             "RANK_2016":26,
+             "RANK_2017":22,
+             "RANK_2018":24,
+             "RANK_2019":18,
+             "RANK_2020":14,
+             "RANK_2021":16,
+             "RANK_2022":13
           }
        },
        {
@@ -3410,15 +3410,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Menominee",
-             "RANK_14":72,
-             "RANK_15":72,
-             "RANK_16":72,
-             "RANK_17":72,
-             "RANK_18":72,
-             "RANK_19":72,
-             "RANK_20":71,
-             "RANK_21":71,
-             "RANK_22":72
+             "RANK_2014":72,
+             "RANK_2015":72,
+             "RANK_2016":72,
+             "RANK_2017":72,
+             "RANK_2018":72,
+             "RANK_2019":72,
+             "RANK_2020":71,
+             "RANK_2021":71,
+             "RANK_2022":72
           }
        },
        {
@@ -3476,15 +3476,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Dunn",
-             "RANK_14":18,
-             "RANK_15":28,
-             "RANK_16":32,
-             "RANK_17":26,
-             "RANK_18":23,
-             "RANK_19":17,
-             "RANK_20":16,
-             "RANK_21":22,
-             "RANK_22":14
+             "RANK_2014":18,
+             "RANK_2015":28,
+             "RANK_2016":32,
+             "RANK_2017":26,
+             "RANK_2018":23,
+             "RANK_2019":17,
+             "RANK_2020":16,
+             "RANK_2021":22,
+             "RANK_2022":14
           }
        },
        {
@@ -3558,15 +3558,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Saint Croix",
-             "RANK_14":null,
-             "RANK_15":null,
-             "RANK_16":null,
-             "RANK_17":null,
-             "RANK_18":null,
-             "RANK_19":null,
-             "RANK_20":null,
-             "RANK_21":null,
-             "RANK_22":null
+             "RANK_2014":null,
+             "RANK_2015":null,
+             "RANK_2016":null,
+             "RANK_2017":null,
+             "RANK_2018":null,
+             "RANK_2019":null,
+             "RANK_2020":null,
+             "RANK_2021":null,
+             "RANK_2022":null
           }
        },
        {
@@ -3620,15 +3620,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Chippewa",
-             "RANK_14":36,
-             "RANK_15":20,
-             "RANK_16":22,
-             "RANK_17":29,
-             "RANK_18":40,
-             "RANK_19":26,
-             "RANK_20":25,
-             "RANK_21":25,
-             "RANK_22":17
+             "RANK_2014":36,
+             "RANK_2015":20,
+             "RANK_2016":22,
+             "RANK_2017":29,
+             "RANK_2018":40,
+             "RANK_2019":26,
+             "RANK_2020":25,
+             "RANK_2021":25,
+             "RANK_2022":17
           }
        },
        {
@@ -3824,15 +3824,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Door",
-             "RANK_14":13,
-             "RANK_15":12,
-             "RANK_16":31,
-             "RANK_17":41,
-             "RANK_18":50,
-             "RANK_19":20,
-             "RANK_20":9,
-             "RANK_21":2,
-             "RANK_22":10
+             "RANK_2014":13,
+             "RANK_2015":12,
+             "RANK_2016":31,
+             "RANK_2017":41,
+             "RANK_2018":50,
+             "RANK_2019":20,
+             "RANK_2020":9,
+             "RANK_2021":2,
+             "RANK_2022":10
           }
        },
        {
@@ -3902,15 +3902,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Taylor",
-             "RANK_14":14,
-             "RANK_15":27,
-             "RANK_16":16,
-             "RANK_17":9,
-             "RANK_18":2,
-             "RANK_19":9,
-             "RANK_20":15,
-             "RANK_21":11,
-             "RANK_22":9
+             "RANK_2014":14,
+             "RANK_2015":27,
+             "RANK_2016":16,
+             "RANK_2017":9,
+             "RANK_2018":2,
+             "RANK_2019":9,
+             "RANK_2020":15,
+             "RANK_2021":11,
+             "RANK_2022":9
           }
        },
        {
@@ -4052,15 +4052,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Oconto",
-             "RANK_14":42,
-             "RANK_15":37,
-             "RANK_16":36,
-             "RANK_17":25,
-             "RANK_18":31,
-             "RANK_19":38,
-             "RANK_20":35,
-             "RANK_21":36,
-             "RANK_22":31
+             "RANK_2014":42,
+             "RANK_2015":37,
+             "RANK_2016":36,
+             "RANK_2017":25,
+             "RANK_2018":31,
+             "RANK_2019":38,
+             "RANK_2020":35,
+             "RANK_2021":36,
+             "RANK_2022":31
           }
        },
        {
@@ -4134,15 +4134,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Langlade",
-             "RANK_14":34,
-             "RANK_15":49,
-             "RANK_16":61,
-             "RANK_17":65,
-             "RANK_18":67,
-             "RANK_19":62,
-             "RANK_20":26,
-             "RANK_21":45,
-             "RANK_22":41
+             "RANK_2014":34,
+             "RANK_2015":49,
+             "RANK_2016":61,
+             "RANK_2017":65,
+             "RANK_2018":67,
+             "RANK_2019":62,
+             "RANK_2020":26,
+             "RANK_2021":45,
+             "RANK_2022":41
           }
        },
        {
@@ -4188,15 +4188,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Lincoln",
-             "RANK_14":51,
-             "RANK_15":47,
-             "RANK_16":51,
-             "RANK_17":51,
-             "RANK_18":35,
-             "RANK_19":39,
-             "RANK_20":38,
-             "RANK_21":38,
-             "RANK_22":48
+             "RANK_2014":51,
+             "RANK_2015":47,
+             "RANK_2016":51,
+             "RANK_2017":51,
+             "RANK_2018":35,
+             "RANK_2019":39,
+             "RANK_2020":38,
+             "RANK_2021":38,
+             "RANK_2022":48
           }
        },
        {
@@ -4238,15 +4238,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Rusk",
-             "RANK_14":63,
-             "RANK_15":71,
-             "RANK_16":69,
-             "RANK_17":63,
-             "RANK_18":52,
-             "RANK_19":48,
-             "RANK_20":33,
-             "RANK_21":46,
-             "RANK_22":63
+             "RANK_2014":63,
+             "RANK_2015":71,
+             "RANK_2016":69,
+             "RANK_2017":63,
+             "RANK_2018":52,
+             "RANK_2019":48,
+             "RANK_2020":33,
+             "RANK_2021":46,
+             "RANK_2022":63
           }
        },
        {
@@ -4292,15 +4292,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Barron",
-             "RANK_14":29,
-             "RANK_15":26,
-             "RANK_16":29,
-             "RANK_17":31,
-             "RANK_18":18,
-             "RANK_19":27,
-             "RANK_20":37,
-             "RANK_21":44,
-             "RANK_22":42
+             "RANK_2014":29,
+             "RANK_2015":26,
+             "RANK_2016":29,
+             "RANK_2017":31,
+             "RANK_2018":18,
+             "RANK_2019":27,
+             "RANK_2020":37,
+             "RANK_2021":44,
+             "RANK_2022":42
           }
        },
        {
@@ -4386,15 +4386,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Polk",
-             "RANK_14":41,
-             "RANK_15":40,
-             "RANK_16":50,
-             "RANK_17":44,
-             "RANK_18":53,
-             "RANK_19":43,
-             "RANK_20":39,
-             "RANK_21":49,
-             "RANK_22":47
+             "RANK_2014":41,
+             "RANK_2015":40,
+             "RANK_2016":50,
+             "RANK_2017":44,
+             "RANK_2018":53,
+             "RANK_2019":43,
+             "RANK_2020":39,
+             "RANK_2021":49,
+             "RANK_2022":47
           }
        },
        {
@@ -4568,15 +4568,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Marinette",
-             "RANK_14":58,
-             "RANK_15":59,
-             "RANK_16":57,
-             "RANK_17":53,
-             "RANK_18":51,
-             "RANK_19":54,
-             "RANK_20":47,
-             "RANK_21":62,
-             "RANK_22":61
+             "RANK_2014":58,
+             "RANK_2015":59,
+             "RANK_2016":57,
+             "RANK_2017":53,
+             "RANK_2018":51,
+             "RANK_2019":54,
+             "RANK_2020":47,
+             "RANK_2021":62,
+             "RANK_2022":61
           }
        },
        {
@@ -4642,15 +4642,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Oneida",
-             "RANK_14":40,
-             "RANK_15":43,
-             "RANK_16":27,
-             "RANK_17":30,
-             "RANK_18":41,
-             "RANK_19":45,
-             "RANK_20":46,
-             "RANK_21":52,
-             "RANK_22":37
+             "RANK_2014":40,
+             "RANK_2015":43,
+             "RANK_2016":27,
+             "RANK_2017":30,
+             "RANK_2018":41,
+             "RANK_2019":45,
+             "RANK_2020":46,
+             "RANK_2021":52,
+             "RANK_2022":37
           }
        },
        {
@@ -4708,15 +4708,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Price",
-             "RANK_14":43,
-             "RANK_15":65,
-             "RANK_16":65,
-             "RANK_17":59,
-             "RANK_18":34,
-             "RANK_19":36,
-             "RANK_20":40,
-             "RANK_21":37,
-             "RANK_22":26
+             "RANK_2014":43,
+             "RANK_2015":65,
+             "RANK_2016":65,
+             "RANK_2017":59,
+             "RANK_2018":34,
+             "RANK_2019":36,
+             "RANK_2020":40,
+             "RANK_2021":37,
+             "RANK_2022":26
           }
        },
        {
@@ -4810,15 +4810,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Florence",
-             "RANK_14":6,
-             "RANK_15":5,
-             "RANK_16":49,
-             "RANK_17":45,
-             "RANK_18":64,
-             "RANK_19":69,
-             "RANK_20":43,
-             "RANK_21":42,
-             "RANK_22":45
+             "RANK_2014":6,
+             "RANK_2015":5,
+             "RANK_2016":49,
+             "RANK_2017":45,
+             "RANK_2018":64,
+             "RANK_2019":69,
+             "RANK_2020":43,
+             "RANK_2021":42,
+             "RANK_2022":45
           }
        },
        {
@@ -4896,15 +4896,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Forest",
-             "RANK_14":69,
-             "RANK_15":70,
-             "RANK_16":60,
-             "RANK_17":61,
-             "RANK_18":56,
-             "RANK_19":70,
-             "RANK_20":71,
-             "RANK_21":71,
-             "RANK_22":71
+             "RANK_2014":69,
+             "RANK_2015":70,
+             "RANK_2016":60,
+             "RANK_2017":61,
+             "RANK_2018":56,
+             "RANK_2019":70,
+             "RANK_2020":71,
+             "RANK_2021":71,
+             "RANK_2022":71
           }
        },
        {
@@ -4958,15 +4958,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Sawyer",
-             "RANK_14":60,
-             "RANK_15":62,
-             "RANK_16":68,
-             "RANK_17":70,
-             "RANK_18":71,
-             "RANK_19":71,
-             "RANK_20":70,
-             "RANK_21":69,
-             "RANK_22":69
+             "RANK_2014":60,
+             "RANK_2015":62,
+             "RANK_2016":68,
+             "RANK_2017":70,
+             "RANK_2018":71,
+             "RANK_2019":71,
+             "RANK_2020":70,
+             "RANK_2021":69,
+             "RANK_2022":69
           }
        },
        {
@@ -5016,15 +5016,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Washburn",
-             "RANK_14":48,
-             "RANK_15":69,
-             "RANK_16":71,
-             "RANK_17":69,
-             "RANK_18":68,
-             "RANK_19":63,
-             "RANK_20":42,
-             "RANK_21":26,
-             "RANK_22":30
+             "RANK_2014":48,
+             "RANK_2015":69,
+             "RANK_2016":71,
+             "RANK_2017":69,
+             "RANK_2018":68,
+             "RANK_2019":63,
+             "RANK_2020":42,
+             "RANK_2021":26,
+             "RANK_2022":30
           }
        },
        {
@@ -5138,15 +5138,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Burnett",
-             "RANK_14":61,
-             "RANK_15":48,
-             "RANK_16":62,
-             "RANK_17":68,
-             "RANK_18":65,
-             "RANK_19":60,
-             "RANK_20":66,
-             "RANK_21":67,
-             "RANK_22":64
+             "RANK_2014":61,
+             "RANK_2015":48,
+             "RANK_2016":62,
+             "RANK_2017":68,
+             "RANK_2018":65,
+             "RANK_2019":60,
+             "RANK_2020":66,
+             "RANK_2021":67,
+             "RANK_2022":64
           }
        },
        {
@@ -5224,15 +5224,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Vilas",
-             "RANK_14":66,
-             "RANK_15":64,
-             "RANK_16":67,
-             "RANK_17":67,
-             "RANK_18":66,
-             "RANK_19":67,
-             "RANK_20":68,
-             "RANK_21":64,
-             "RANK_22":67
+             "RANK_2014":66,
+             "RANK_2015":64,
+             "RANK_2016":67,
+             "RANK_2017":67,
+             "RANK_2018":66,
+             "RANK_2019":67,
+             "RANK_2020":68,
+             "RANK_2021":64,
+             "RANK_2022":67
           }
        },
        {
@@ -5318,15 +5318,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Iron",
-             "RANK_14":65,
-             "RANK_15":61,
-             "RANK_16":56,
-             "RANK_17":62,
-             "RANK_18":69,
-             "RANK_19":66,
-             "RANK_20":43,
-             "RANK_21":42,
-             "RANK_22":45
+             "RANK_2014":65,
+             "RANK_2015":61,
+             "RANK_2016":56,
+             "RANK_2017":62,
+             "RANK_2018":69,
+             "RANK_2019":66,
+             "RANK_2020":43,
+             "RANK_2021":42,
+             "RANK_2022":45
           }
        },
        {
@@ -5400,15 +5400,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Douglas",
-             "RANK_14":46,
-             "RANK_15":45,
-             "RANK_16":53,
-             "RANK_17":52,
-             "RANK_18":46,
-             "RANK_19":21,
-             "RANK_20":27,
-             "RANK_21":39,
-             "RANK_22":57
+             "RANK_2014":46,
+             "RANK_2015":45,
+             "RANK_2016":53,
+             "RANK_2017":52,
+             "RANK_2018":46,
+             "RANK_2019":21,
+             "RANK_2020":27,
+             "RANK_2021":39,
+             "RANK_2022":57
           }
        },
        {
@@ -5534,15 +5534,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Bayfield",
-             "RANK_14":55,
-             "RANK_15":52,
-             "RANK_16":44,
-             "RANK_17":58,
-             "RANK_18":61,
-             "RANK_19":58,
-             "RANK_20":45,
-             "RANK_21":47,
-             "RANK_22":54
+             "RANK_2014":55,
+             "RANK_2015":52,
+             "RANK_2016":44,
+             "RANK_2017":58,
+             "RANK_2018":61,
+             "RANK_2019":58,
+             "RANK_2020":45,
+             "RANK_2021":47,
+             "RANK_2022":54
           }
        },
        {
@@ -5730,15 +5730,15 @@
           },
           "properties":{
              "COUNTY_NAM":"Ashland",
-             "RANK_14":49,
-             "RANK_15":55,
-             "RANK_16":64,
-             "RANK_17":64,
-             "RANK_18":62,
-             "RANK_19":65,
-             "RANK_20":64,
-             "RANK_21":65,
-             "RANK_22":65
+             "RANK_2014":49,
+             "RANK_2015":55,
+             "RANK_2016":64,
+             "RANK_2017":64,
+             "RANK_2018":62,
+             "RANK_2019":65,
+             "RANK_2020":64,
+             "RANK_2021":65,
+             "RANK_2022":65
           }
        }
     ]

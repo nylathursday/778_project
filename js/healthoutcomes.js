@@ -6,12 +6,6 @@ var map;
 var attributes;
 var currentAttribute;
 
-//thinking through 
-var year; //starting by thinking about similar logic to current attributes
-var currentYear;
-var subTitle;
-var currentSubtitle;
-
 //creat the map
 function createMap(){
     map = L.map('map', {
@@ -59,8 +53,6 @@ function highlightFeatureHO(e) {
     // puts the highlight on top
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layerHO.bringToFront();
-  
-    infoHO.update(layerHO.feature.properties);
     }
   };
 
@@ -68,12 +60,14 @@ function highlightFeatureHO(e) {
 function resetHighlightHO(e) {
     var layerHO = e.target; 
     geojsonHO.resetStyle(e.target); 
-    infoHO.update();
   };
 
 //mouseover highlights feature, mouseout resests from highight
 function onEachFeatureHO(feature, layerHO) {
-    layerHO.on({
+  layerHO.bindTooltip('<b>' + feature.properties.COUNTY_NAM + ' County'+ '</b><br />' + Number(feature.properties[currentAttribute]), {
+    className:"rank_info" //rank_info is what I use to style in css
+  });  
+  layerHO.on({
         mouseover: highlightFeatureHO,
         mouseout: resetHighlightHO,
     });
@@ -93,32 +87,20 @@ function styleOutcome(feature, attributes) {
     };
 }
 
-//add year panel
+//create title panel
 var infoHO = L.control();
-
 function infoPanel(){
-
   infoHO.onAdd = function (map) {
       this._div = L.DomUtil.create('div', 'infoHO'); // create a div with a class "info"
-      
-      this.update();
+      this._div.innerHTML = '<h4 id="info-title">Health Outcomes</h4><h4 id="info-yr">2014</h4>';
+     // this.update();
       return this._div;
-  };
-  
-  //update the control based on feature properties passed
-  infoHO.update = function (props) { 
-    var title; //how would I set this to be based on button?
-    var year; // how woul I set this to be based on slider?
-    this._div.innerHTML = '<h4>' + title + ' ' + year + '</h4>' + (props ? //NEED to update title & year
-          '<b>' + props.COUNTY_NAM + ' County'+ '</b><br />' + Number(props[currentAttribute])
-          : 'Hover over a county');
   };
   infoHO.addTo(map); 
 };
 
 
 //update choropleth from slider and buttons
-
 function updateChoropleth(attribute){
     currentAttribute = attribute;
     map.eachLayer(function(layer){
@@ -150,17 +132,17 @@ function processData(data){
             attributes.push(attribute); //placing all attributes into the array for other functions to move through
         };
     };
-    console.log("Number of attributes: " + attributes.length); // log the number of attributes
     return attributes;
 };
 
 function createSequenceControls(attributes){
     //create range input element (slider)
     if (!document.querySelector(".range-slider")) {
-        var slider = "<input class='range-slider' type='range'></input>";
+      infoPanel();
+      
+      var slider = "<input class='range-slider' type='range'></input>";
         document.querySelector("#panel").insertAdjacentHTML('beforeend',slider);
         //set slider attributes
-        console.log(attributes.length)
         document.querySelector(".range-slider").max = attributes.length -1;
         document.querySelector(".range-slider").min = 0;
         document.querySelector(".range-slider").value = 0;
@@ -169,8 +151,8 @@ function createSequenceControls(attributes){
       
       //add step buttons if they don't already exist
       if (!document.querySelector("#reverse")) {
-        document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="reverse">2022</button>');
-        document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="forward">2014</button>');
+        document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="reverse">2014</button>');
+        document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="forward">2022</button>');
       }
 
       $('#reverse').off()
@@ -180,11 +162,12 @@ function createSequenceControls(attributes){
     steps.forEach(function(step){
         $(step).on("click", function(){
             var index = document.querySelector('.range-slider').value;
+
             
             if (step.id == 'forward'){
                 index++;
                 index = index > 9 ? 0 : index;
-                console.log(index)
+  
             } else if (step.id == 'reverse'){
                 index--;
                 
@@ -192,6 +175,7 @@ function createSequenceControls(attributes){
             };
             document.querySelector('.range-slider').value = index;
             updateChoropleth(attributes[index]);
+            document.querySelector("#info-yr").innerHTML = attributes[index].split("_")[1];
         })
     })
     document.querySelector('.range-slider').addEventListener('input', function(){
@@ -213,7 +197,7 @@ function getData(map) {
           currentAttribute = attributes[0];
           createChoropleth(json, attributes);
           createSequenceControls(attributes);
-          infoPanel();
+         // infoPanel();
           legend.addTo(map);
         });
     }
@@ -222,28 +206,35 @@ function getData(map) {
     // attach click event handlers to the buttons
     $("#health_outcomes0").on("click", function () {
       loadData("data/health_outcomes.geojson");
+      document.querySelector("#info-title").innerHTML = this.value;
     });
     $("#health_outcomes1").on("click", function () {
       loadData("data/length_life.geojson");
+      document.querySelector("#info-title").innerHTML = this.value;
     });
     $("#health_outcomes2").on("click", function () {
       loadData("data/quality_life.geojson");
+      document.querySelector("#info-title").innerHTML = this.value;
     });
   };
 
 document.addEventListener('DOMContentLoaded',createMap)
 
-//add static legend
-var legend = L.control({position: "bottomleft"});
-legend.onAdd = function(map) {
-    var div = L.DomUtil.create("div", "legend"); 
-    div.innerHTML = 
-        '<b>County Health Rank</b><br>' +
-        '<i style="background-color: #b30000"></i>2090+<br>' +
-        '<i style="background-color: #e34a33"></i>933 - 2090<br>' +
-        '<i style="background-color: #fc8d59"></i>642 - 933<br>' +
-        '<i style="background-color: #fdcc8a"></i>399 - 642<br>' +
-        '<i style="background-color: #fef0d9"></i>0 - 399<br>';
-    return div;
-};
+// Define the colors for each class
+const colors = ['#3C6754', '#72AC93','#B2D2C4', '#F2F7F5' ];
 
+// Define the labels for each class
+const labels = [' 55 - 72', ' 37 - 54', ' 19 - 36', ' 1 - 18'];
+
+// Create a new Leaflet control for the legend
+const legend = L.control({ position: 'bottomleft' });
+
+// Add a function to generate the HTML content for the legend
+legend.onAdd = function(map) {
+  const div = L.DomUtil.create('div', 'legend');
+  div.innerHTML += '<b>County Rank</b><br>';
+  for (let i = 0; i < colors.length; i++) {
+    div.innerHTML += '<div><svg height="12" width="12"><rect x="0" y="0" width="12" height="12" style="fill:' + colors[i] + ';"/></svg>' + labels[i] + '</div>';
+  }
+  return div;
+};
