@@ -68,11 +68,23 @@ h3 {
   width: 100%;
 }
 
+.range-sliderHF {
+  width: 100%;
+}
+
 #forward {
   float: right;
 }
 
 #reverse {
+  float: left;
+}
+
+#forwardHF {
+  float: right;
+}
+
+#reverseHF {
   float: left;
 }
 

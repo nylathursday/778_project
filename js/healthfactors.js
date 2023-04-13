@@ -135,53 +135,53 @@ function processDataHF(data){
 };
 
 //can I just call the same sequence controls??
-function createSequenceControlsHF(attributes2){
-    //create range input element (slider)
-    if (!document.querySelector(".range-slider")) {
-      infoPanelHF();
-      
-      var slider = "<input class='range-slider' type='range'></input>";
-        document.querySelector("#panel").insertAdjacentHTML('beforeend',slider);
-        //set slider attributes
-        document.querySelector(".range-slider").max = attributes2.length -1;
-        document.querySelector(".range-slider").min = 0;
-        document.querySelector(".range-slider").value = 0;
-        document.querySelector(".range-slider").step = 1;
-      }
-      
-      //add step buttons if they don't already exist
-      if (!document.querySelector("#reverse")) {
-        document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="reverse">2014</button>');
-        document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="forward">2022</button>');
-      }
+function createSequenceControlsHF(attributesHF){
+  //create range input element (slider)
+  if (!document.querySelector(".range-sliderHF")) {
+    infoPanelHF();
+    
+    var sliderHF = "<input class='range-sliderHF' type='range'></input>";
+      document.querySelector("#panel").insertAdjacentHTML('beforeend',sliderHF);
+      //set slider attributes
+      document.querySelector(".range-sliderHF").max = attributesHF.length -1;
+      document.querySelector(".range-sliderHF").min = 0;
+      document.querySelector(".range-sliderHF").value = 0;
+      document.querySelector(".range-sliderHF").step = 1;
+    }
+    
+    //add step buttons if they don't already exist
+    if (!document.querySelector("#reverseHF")) {
+      document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="reverseHF">2014</button>');
+      document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="forwardHF">2022</button>');
+    }
 
-      $('#reverse').off()
-      $('#forward').off()
-      
-    var steps = document.querySelectorAll('.step');
-    steps.forEach(function(step){
-        $(step).on("click", function(){
-            var index = document.querySelector('.range-slider').value;
+    $('#reverseHF').off()
+    $('#forwardHF').off()
+    
+  var stepsHF = document.querySelectorAll('.step');
+  stepsHF.forEach(function(stepHF){
+      $(stepHF).on("click", function(){
+          var indexHF = document.querySelector('.range-sliderHF').value;
 
-            
-            if (step.id == 'forward'){
-                index++;
-                index = index > 9 ? 0 : index;
-  
-            } else if (step.id == 'reverse'){
-                index--;
-                
-                index = index < 0 ? 9 : index;
-            };
-            document.querySelector('.range-slider').value = index;
-            updateChoropleth(attributes2[index]);
-            document.querySelector("#info-yr").innerHTML = attributes2[index].split("_")[1]; //come back here to update year
-        })
-    })
-    document.querySelector('.range-slider').addEventListener('input', function(){
-        var index = this.value;
-        updateChoroplethHF(attributes2[index]);
-    });
+          
+          if (stepHF.id == 'forwardHF'){
+              indexHF++;
+              indexHF = indexHF > 9 ? 0 : indexHF;
+
+          } else if (stepHF.id == 'reverseHF'){
+              indexHF--;
+              
+              indexHF = indexHF < 0 ? 9 : indexHF;
+          };
+          document.querySelector('.range-sliderHF').value = indexHF;
+          updateChoroplethHF(attributesHF[indexHF]);
+          document.querySelector("#info-yrHF").innerHTML = attributesHF[indexHF].split("_")[1];
+      })
+  })
+  document.querySelector('.range-sliderHF').addEventListener('input', function(){
+      var indexHF = this.value;
+      updateChoroplethHF(attributesHF[indexHF]);
+  });
 };
 
 function getDataHF(map2) {

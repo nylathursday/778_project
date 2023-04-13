@@ -64,9 +64,9 @@ function resetHighlightHO(e) {
 
 //mouseover highlights feature, mouseout resests from highight
 function onEachFeatureHO(feature, layerHO) {
-  layerHO.bindTooltip('<b>' + feature.properties.COUNTY_NAM + ' County'+ '</b><br />' + Number(feature.properties[currentAttribute]), {
+  layerHO.bindTooltip('<b>' + feature.properties.COUNTY_NAM + ' County'+ '</b><br /> <p id= "attInfo">' + Number(feature.properties[currentAttribute]) +'</p>', {
     className:"rank_info" //rank_info is what I use to style in css
-  });  
+  }); 
   layerHO.on({
         mouseover: highlightFeatureHO,
         mouseout: resetHighlightHO,
@@ -113,6 +113,11 @@ function updateChoropleth(attribute){
                 dashArray: '5',
                 fillOpacity: 0.8
             });
+            var toolTip = layer.getTooltip();
+            var toolTipCont = '<b>' + layer.feature.properties.COUNTY_NAM + ' County'+ '</b><br /> <p id= "attInfo">' + Number(layer.feature.properties[attribute]) +'</p>';
+            toolTip.setContent(toolTipCont).update();
+
+
            var year = attribute.split("_")[1];
         };
     });
