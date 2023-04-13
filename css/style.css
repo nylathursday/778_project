@@ -145,7 +145,21 @@ button:hover {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+.legendHF {
+  background-color: #f2972780;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
 .rank_info{
+  background-color: #f29727c3;
+  font-size: 15px
+}
+
+.rank_infoHF{
   background-color: #f29727c3;
   font-size: 15px
 }

@@ -93,7 +93,6 @@ function infoPanel(){
   infoHO.onAdd = function (map) {
       this._div = L.DomUtil.create('div', 'infoHO'); // create a div with a class "info"
       this._div.innerHTML = '<h4 id="info-title">Health Outcomes</h4><h4 id="info-yr">2014</h4>';
-     // this.update();
       return this._div;
   };
   infoHO.addTo(map); 

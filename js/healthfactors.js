@@ -65,7 +65,7 @@ function resetHighlightHF(e) {
 //mouseover highlights feature, mouseout resests from highight
 function onEachFeatureHF(feature, layerHF) {
   layerHF.bindTooltip('<b>' + feature.properties.COUNTY_NAM + ' County'+ '</b><br />' + Number(feature.properties[currentAttribute2]), {
-    className:"rank_info" //rank_info is what I use to style in css
+    className:"rank_infoHF" //rank_info is what I use to style in css
   });  
   layerHF.on({
         mouseover: highlightFeatureHF,
@@ -76,9 +76,9 @@ function onEachFeatureHF(feature, layerHF) {
 //style for health outcomes
 function styleOutcomeHF(feature, attributes2) {
     //For each feature, determine its value for the selected attribute
-    var attValue = Number(feature.properties[currentAttribute2]); 
+    var attValue2 = Number(feature.properties[currentAttribute2]); 
     return {
-      fillColor: getOutcomeColorHF(attValue),
+      fillColor: getOutcomeColorHF(attValue2),
       weight: 2,
       opacity: 1,
       color: 'white',
@@ -89,11 +89,10 @@ function styleOutcomeHF(feature, attributes2) {
 
 //create title panel
 var infoHF = L.control();
-function infoPanel(){
+function infoPanelHF(){
   infoHF.onAdd = function (map2) {
-      this._div = L.DomUtil.create('div', 'infoHF'); // create a div with a class "info"
-      this._div.innerHTML = '<h4 id="info-title">Health Factors</h4><h4 id="info-yr">2014</h4>';
-     // this.update();
+      this._div = L.DomUtil.create('div', 'infoHF');
+      this._div.innerHTML = '<h4 id="info-titleHF">Health Factors</h4><h4 id="info-yr2">2014</h4>';
       return this._div;
   };
   infoHF.addTo(map2); 
@@ -114,7 +113,7 @@ function updateChoroplethHF(attribute2){
                 dashArray: '5',
                 fillOpacity: 0.8
             });
-           var year = attribute2.split("_")[1];
+           var year2 = attribute2.split("_")[1]; //come back here for SLIDER edits
         };
     });
 };
@@ -126,19 +125,20 @@ function processDataHF(data){
     //properties of the first feature in the dataset //* CAN I change to make new array for next set of features, like if i did 1 table
     var properties = data.features[0].properties;
     //push each attribute name into attributes array
-    for (var attribute in properties){
+    for (var attribute2 in properties){
         //only take attributes with RANK values
-       if (attribute.indexOf("RANK") > -1){
-            attributes2.push(attribute); //placing all attributes into the array for other functions to move through
+       if (attribute2.indexOf("RANK") > -1){
+            attributes2.push(attribute2); //placing all attributes into the array for other functions to move through
         };
     };
     return attributes2;
 };
 
+//can I just call the same sequence controls??
 function createSequenceControlsHF(attributes2){
     //create range input element (slider)
     if (!document.querySelector(".range-slider")) {
-      infoPanel();
+      infoPanelHF();
       
       var slider = "<input class='range-slider' type='range'></input>";
         document.querySelector("#panel").insertAdjacentHTML('beforeend',slider);
@@ -175,7 +175,7 @@ function createSequenceControlsHF(attributes2){
             };
             document.querySelector('.range-slider').value = index;
             updateChoropleth(attributes2[index]);
-            document.querySelector("#info-yr").innerHTML = attributes2[index].split("_")[1];
+            document.querySelector("#info-yr").innerHTML = attributes2[index].split("_")[1]; //come back here to update year
         })
     })
     document.querySelector('.range-slider').addEventListener('input', function(){
@@ -186,8 +186,8 @@ function createSequenceControlsHF(attributes2){
 
 function getDataHF(map2) {
     // define a function that loads the data
-    function loadDataHF(dataUrl) {
-      fetch(dataUrl)
+    function loadDataHF(dataUrlHF) {
+      fetch(dataUrlHF)
         .then(function (response) {
           return response.json();
         })
@@ -197,44 +197,52 @@ function getDataHF(map2) {
           currentAttribute2 = attributes2[0];
           createChoroplethHF(json, attributes2);
           createSequenceControlsHF(attributes2);
-         // infoPanel();
-          // legendHF.addTo(map2);
+          infoPanelHF(); //commented out here, b/c if here panel only updates for a second
+          legendHF.addTo(map2);
         });
     }
     // load default data
     loadDataHF("data/health_factors.geojson");
     // attach click event handlers to the buttons
-    $("#health_outcomes0").on("click", function () {
-      loadData("data/health_outcomes.geojson");
-      document.querySelector("#info-title").innerHTML = this.value;
+    $("#health_factors0").on("click", function () {
+      loadDataHF("data/health_factors.geojson");
+      document.querySelector("#info-titleHF").innerHTML= this.value;
     });
-    $("#health_outcomes1").on("click", function () {
-      loadData("data/length_life.geojson");
-      document.querySelector("#info-title").innerHTML = this.value;
+    $("#health_factors1").on("click", function () {
+      loadDataHF("data/physical_env.geojson");
+      document.querySelector("#info-titleHF").innerHTML = this.value;
     });
-    $("#health_outcomes2").on("click", function () {
-      loadData("data/quality_life.geojson");
-      document.querySelector("#info-title").innerHTML = this.value;
+    $("#health_factors2").on("click", function () {
+      loadDataHF("data/social_economic.geojson");
+      document.querySelector("#info-titleHF").innerHTML = this.value;
+    });
+    $("#health_factors3").on("click", function () {
+      loadDataHF("data/health_behaviors.geojson");
+      document.querySelector("#info-titleHF").innerHTML = this.value;
+    });
+    $("#health_factors4").on("click", function () {
+      loadDataHF("data/clinical_care.geojson");
+      document.querySelector("#info-titleHF").innerHTML = this.value;
     });
   };
 
 document.addEventListener('DOMContentLoaded',createMapHF)
 
-// // Define the colors for each class
-// const colorsHF = ['#3C6754', '#72AC93','#B2D2C4', '#F2F7F5' ];
+// Define the colors for each class
+const colorsHF = ['#375881', '#7095C2','#A9BFDA', '#E2EAF3' ];
 
-// // Define the labels for each class
-// const labelsHF = [' 55 - 72', ' 37 - 54', ' 19 - 36', ' 1 - 18'];
+// Define the labels for each class
+const labelsHF = [' 55 - 72', ' 37 - 54', ' 19 - 36', ' 1 - 18'];
 
-// // Create a new Leaflet control for the legend
-// const legendHF = L.control({ position: 'bottomleft' });
+// Create a new Leaflet control for the legend
+const legendHF = L.control({ position: 'bottomleft' });
 
-// // Add a function to generate the HTML content for the legend
-// legendHF.onAdd = function(map) {
-//   const div = L.DomUtil.create('div', 'legendHF');
-//   div.innerHTML += '<b>County Rank</b><br>';
-//   for (let i = 0; i < colorsHF.length; i++) {
-//     div.innerHTML += '<div><svg height="12" width="12"><rect x="0" y="0" width="12" height="12" style="fill:' + colors[i] + ';"/></svg>' + labels[i] + '</div>';
-//   }
-//   return div;
-// };
+// Add a function to generate the HTML content for the legend
+legendHF.onAdd = function(map2) {
+  const div = L.DomUtil.create('div', 'legendHF');
+  div.innerHTML += '<b>County Rank</b><br>';
+  for (let i = 0; i < colorsHF.length; i++) {
+    div.innerHTML += '<div><svg height="12" width="12"><rect x="0" y="0" width="12" height="12" style="fill:' + colorsHF[i] + ';"/></svg>' + labelsHF[i] + '</div>';
+  }
+  return div;
+};
