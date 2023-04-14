@@ -111,7 +111,7 @@ function updateChoropleth(attribute){
                 opacity: 1,
                 color: 'white',
                 dashArray: '5',
-                fillOpacity: 0.8
+                fillOpacity: 1
             });
             var toolTip = layer.getTooltip();
             var toolTipCont = '<b>' + layer.feature.properties.COUNTY_NAM + ' County'+ '</b><br /> <p id= "attInfo">' + Number(layer.feature.properties[attribute]) +'</p>';

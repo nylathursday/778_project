@@ -111,7 +111,7 @@ function updateChoroplethHF(attribute2){
                 opacity: 1,
                 color: 'white',
                 dashArray: '5',
-                fillOpacity: 0.8
+                fillOpacity: 1
             });
            var year2 = attribute2.split("_")[1]; //come back here for SLIDER edits
         };
