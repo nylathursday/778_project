@@ -117,7 +117,6 @@ function updateChoropleth(attribute){
             var toolTipCont = '<b>' + layer.feature.properties.COUNTY_NAM + ' County'+ '</b><br /> <p id= "attInfo">' + Number(layer.feature.properties[attribute]) +'</p>';
             toolTip.setContent(toolTipCont).update();
 
-
            var year = attribute.split("_")[1];
         };
     });
@@ -139,13 +138,15 @@ function processData(data){
     return attributes;
 };
 
+
 function createSequenceControls(attributes){
     //create range input element (slider)
     if (!document.querySelector(".range-slider")) {
       infoPanel();
       
       var slider = "<input class='range-slider' type='range'></input>";
-        document.querySelector("#panel").insertAdjacentHTML('beforeend',slider);
+        document.querySelector("#panel").insertAdjacentHTML('afterbegin',slider);
+        
         //set slider attributes
         document.querySelector(".range-slider").max = attributes.length -1;
         document.querySelector(".range-slider").min = 0;
@@ -155,8 +156,8 @@ function createSequenceControls(attributes){
       
       //add step buttons if they don't already exist
       if (!document.querySelector("#reverse")) {
-        document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="reverse">2014</button>');
-        document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="forward">2022</button>');
+        document.querySelector('#panel').insertAdjacentHTML('afterbegin','<button class="step" id="reverse">2014</button>');
+        document.querySelector('#panel').insertAdjacentHTML('afterbegin','<button class="step" id="forward">2022</button>');
       }
 
       $('#reverse').off()
@@ -201,7 +202,7 @@ function getData(map) {
           currentAttribute = attributes[0];
           createChoropleth(json, attributes);
           createSequenceControls(attributes);
-         // infoPanel();
+         // infoPanel(); //removed because if here, goes back to orig everytime
           legend.addTo(map);
         });
     }

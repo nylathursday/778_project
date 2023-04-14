@@ -64,7 +64,7 @@ function resetHighlightHF(e) {
 
 //mouseover highlights feature, mouseout resests from highight
 function onEachFeatureHF(feature, layerHF) {
-  layerHF.bindTooltip('<b>' + feature.properties.COUNTY_NAM + ' County'+ '</b><br />' + Number(feature.properties[currentAttribute2]), {
+  layerHF.bindTooltip('<b>' + feature.properties.COUNTY_NAM + ' County'+ '</b><br /> <p id= "attInfoHF">' + Number(feature.properties[currentAttribute2]) +'</p>', {
     className:"rank_infoHF" //rank_info is what I use to style in css
   });  
   layerHF.on({
@@ -87,13 +87,12 @@ function styleOutcomeHF(feature, attributes2) {
     };
 }
 
-//create title panel
 var infoHF = L.control();
 function infoPanelHF(){
   infoHF.onAdd = function (map2) {
-      this._div = L.DomUtil.create('div', 'infoHF');
-      this._div.innerHTML = '<h4 id="info-titleHF">Health Factors</h4><h4 id="info-yr2">2014</h4>';
-      return this._div;
+      this._divHF = L.DomUtil.create('div', 'infoHF'); // create a div with a class "info"
+      this._divHF.innerHTML = '<h4 id="info-titleHF">Health Factors</h4><h4 id="info-yrHF">2014</h4><h3>hover over a county for rank</h3>';
+      return this._divHF;
   };
   infoHF.addTo(map2); 
 };
@@ -113,6 +112,11 @@ function updateChoroplethHF(attribute2){
                 dashArray: '5',
                 fillOpacity: 1
             });
+
+            var toolTipHF = layer.getTooltip();
+            var toolTipContHF = '<b>' + layer.feature.properties.COUNTY_NAM + ' County'+ '</b><br /> <p id= "attInfoHF">' + Number(layer.feature.properties[attribute2]) +'</p>';
+            toolTipHF.setContent(toolTipContHF).update();
+
            var year2 = attribute2.split("_")[1]; //come back here for SLIDER edits
         };
     });
@@ -197,7 +201,7 @@ function getDataHF(map2) {
           currentAttribute2 = attributes2[0];
           createChoroplethHF(json, attributes2);
           createSequenceControlsHF(attributes2);
-          infoPanelHF(); //commented out here, b/c if here panel only updates for a second
+          // infoPanelHF(); //commented out here, b/c if here panel only updates for a second
           legendHF.addTo(map2);
         });
     }
