@@ -91,7 +91,7 @@ var infoHF = L.control();
 function infoPanelHF(){
   infoHF.onAdd = function (map2) {
       this._divHF = L.DomUtil.create('div', 'infoHF'); // create a div with a class "info"
-      this._divHF.innerHTML = '<h4 id="info-titleHF">Health Factors</h4><h4 id="info-yrHF">2014</h4><h3>hover over a county for rank</h3>';
+      this._divHF.innerHTML = '<h4 id="info-titleHF">Health Factors</h4><h4 id="info-yrHF">2014</h4>';
       return this._divHF;
   };
   infoHF.addTo(map2); 
