@@ -65,7 +65,7 @@ function resetHighlightHO(e) {
 //mouseover highlights feature, mouseout resests from highight
 function onEachFeatureHO(feature, layerHO) {
   layerHO.bindTooltip('<b>' + feature.properties.COUNTY_NAM + ' County'+ '</b><br /> <p id= "attInfo">' + Number(feature.properties[currentAttribute]) +'</p>', {
-    className:"rank_info" //rank_info is what I use to style in css
+    className:"rank_info"
   }); 
   layerHO.on({
         mouseover: highlightFeatureHO,
@@ -126,7 +126,7 @@ function updateChoropleth(attribute){
 function processData(data){
     //empty array to hold attributes
     var attributes = [];
-    //properties of the first feature in the dataset //* CAN I change to make new array for next set of features, like if i did 1 table
+    //properties of the first feature in the dataset
     var properties = data.features[0].properties;
     //push each attribute name into attributes array
     for (var attribute in properties){
@@ -158,7 +158,12 @@ function createSequenceControls(attributes){
       if (!document.querySelector("#reverse")) {
         document.querySelector('#panel').insertAdjacentHTML('afterbegin','<button class="step" id="reverse">2014</button>');
         document.querySelector('#panel').insertAdjacentHTML('afterbegin','<button class="step" id="forward">2022</button>');
+
+        document.querySelector('#reverse').insertAdjacentHTML('beforeend'," <img src='img/reverse.png'>")
+        document.querySelector('#forward').insertAdjacentHTML('beforeend'," <img src='img/forward.png'>")
       }
+
+      
 
       $('#reverse').off()
       $('#forward').off()
@@ -202,7 +207,6 @@ function getData(map) {
           currentAttribute = attributes[0];
           createChoropleth(json, attributes);
           createSequenceControls(attributes);
-         // infoPanel(); //removed because if here, goes back to orig everytime
           legend.addTo(map);
         });
     }
@@ -225,6 +229,7 @@ function getData(map) {
 
 document.addEventListener('DOMContentLoaded',createMap)
 
+//Create Legend
 // Define the colors for each class
 const colors = ['#3C6754', '#72AC93','#B2D2C4', '#F2F7F5' ];
 

@@ -65,7 +65,7 @@ function resetHighlightHF(e) {
 //mouseover highlights feature, mouseout resests from highight
 function onEachFeatureHF(feature, layerHF) {
   layerHF.bindTooltip('<b>' + feature.properties.COUNTY_NAM + ' County'+ '</b><br /> <p id= "attInfoHF">' + Number(feature.properties[currentAttribute2]) +'</p>', {
-    className:"rank_infoHF" //rank_info is what I use to style in css
+    className:"rank_infoHF"
   });  
   layerHF.on({
         mouseover: highlightFeatureHF,
@@ -126,7 +126,7 @@ function updateChoroplethHF(attribute2){
 function processDataHF(data){
     //empty array to hold attributes
     var attributes2 = [];
-    //properties of the first feature in the dataset //* CAN I change to make new array for next set of features, like if i did 1 table
+    //properties of the first feature in the dataset
     var properties = data.features[0].properties;
     //push each attribute name into attributes array
     for (var attribute2 in properties){
@@ -138,7 +138,7 @@ function processDataHF(data){
     return attributes2;
 };
 
-//can I just call the same sequence controls??
+//Create slider as sequence control
 function createSequenceControlsHF(attributesHF){
   //create range input element (slider)
   if (!document.querySelector(".range-sliderHF")) {
@@ -157,6 +157,8 @@ function createSequenceControlsHF(attributesHF){
     if (!document.querySelector("#reverseHF")) {
       document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="reverseHF">2014</button>');
       document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="forwardHF">2022</button>');
+      document.querySelector('#reverseHF').insertAdjacentHTML('beforeend'," <img src='img/reverse.png'>")
+      document.querySelector('#forwardHF').insertAdjacentHTML('beforeend'," <img src='img/forward.png'>")
     }
 
     $('#reverseHF').off()
@@ -201,7 +203,6 @@ function getDataHF(map2) {
           currentAttribute2 = attributes2[0];
           createChoroplethHF(json, attributes2);
           createSequenceControlsHF(attributes2);
-          // infoPanelHF(); //commented out here, b/c if here panel only updates for a second
           legendHF.addTo(map2);
         });
     }
@@ -232,6 +233,7 @@ function getDataHF(map2) {
 
 document.addEventListener('DOMContentLoaded',createMapHF)
 
+//Create legend
 // Define the colors for each class
 const colorsHF = ['#375881', '#7095C2','#A9BFDA', '#E2EAF3' ];
 

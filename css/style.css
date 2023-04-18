@@ -22,11 +22,6 @@ h3 {
 
 /* web page features */
 
-/* #header {
-  height: 100px;
-  text-align: center;
-  background-color: #003C69;
-} */
 #header {
   display: flex;
   justify-content: center;
@@ -35,11 +30,6 @@ h3 {
   background-color: #D9411E;
 }
 
-/* #innerHeader {
-  height: 10px;
-  text-align: left;
-  background-color: #F29E38;
-} */
 
 #panel {
   /* border-radius: 5px; */
