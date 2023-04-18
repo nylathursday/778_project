@@ -32,7 +32,7 @@ h3 {
   justify-content: center;
   align-items: center;
   /* background-color: #003C69; */
-  background-color: #a72b05;
+  background-color: #D9411E;
 }
 
 /* #innerHeader {
@@ -50,7 +50,7 @@ h3 {
   text-align: left;
   text-align: left;
   /* background: rgb(181, 181, 181); */
-  background: rgb(181, 181, 181);
+  background:rgb(212, 211, 211);
   font-size: .7em;
   line-height: normal;
 }
@@ -65,7 +65,7 @@ h3 {
   float: left;
   height: 600px;
   width: 38%;
-  background-color:rgb(181, 181, 181);
+  background-color: rgb(212, 211, 211);
 
 }
 
@@ -74,7 +74,7 @@ h3 {
   float: left;
   height: 600px;
   width: 38%;
-  background-color:rgb(181, 181, 181);
+  background-color:rgb(212, 211, 211);
 
 }
 
